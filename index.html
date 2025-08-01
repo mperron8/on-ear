@@ -6,7 +6,11 @@
   <title>ON-EAR | Ontario Network for Emerging Auditory Research</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-     :root {
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
       --blue: #292C77;
       --yellow: #F9A030;
       --gray: #f9f9f9;
@@ -45,6 +49,8 @@
     .site-title {
       display: flex;
       flex-direction: column;
+      margin: 0;
+      padding: 0;
     }
 
     .site-title .main {
@@ -60,15 +66,13 @@
       font-size: 1rem;
       color: #666;
       margin: 0;
-      margin-top: -6px;
-
+      line-height: 1.2;
     }
 
-.nav-links {
+    .nav-links {
       display: flex;
       gap: 20px;
       flex-wrap: wrap;
-      margin-top: 1rem;
     }
 
     .nav-links a {
@@ -87,20 +91,20 @@
 
     .hero {
       background: var(--gradient);
-      padding: 6rem 2rem;
+      padding: 4rem 2rem;
       color: white;
       text-align: center;
     }
 
     .hero h1 {
       font-size: 3rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
 
     .hero p {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       max-width: 700px;
-      margin: 0 auto 2rem;
+      margin: 0 auto 1.5rem;
     }
 
     .button {
@@ -149,6 +153,10 @@
       header {
         flex-direction: column;
         align-items: flex-start;
+      }
+
+      .nav-links {
+        margin-top: 1rem;
       }
 
       .hero h1 {
@@ -211,7 +219,7 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Questions? Reach out to the TMARC team or connect with us through our university channels.</p>
+    <p>Questions? Reach out to the TMARC team.</p>
   </section>
 
   <footer>
